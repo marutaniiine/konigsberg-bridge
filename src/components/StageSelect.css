@@ -1,0 +1,144 @@
+.select-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+.select-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.select-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.select-intro {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.select-intro p {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.select-tip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 14px !important;
+  color: var(--text) !important;
+  margin: 0 auto;
+}
+
+.stage-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 20px 40px;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.stage-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.stage-card:hover {
+  border-color: var(--accent);
+  background: var(--surface2);
+  transform: translateX(4px);
+}
+
+.stage-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-width: 36px;
+  text-align: center;
+}
+
+.stage-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.stage-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.stage-card-header h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.stage-card-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.stage-card-meta {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stage-meta-item {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.stage-solvable {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.stage-solvable.solvable {
+  background: #1e3a2a;
+  color: #3fb950;
+}
+
+.stage-solvable.unsolvable {
+  background: #3a1520;
+  color: #f85149;
+}
+
+.stage-arrow {
+  font-size: 22px;
+  color: var(--text-muted);
+  transition: transform 0.2s;
+}
+
+.stage-card:hover .stage-arrow {
+  color: var(--accent);
+  transform: translateX(4px);
+}

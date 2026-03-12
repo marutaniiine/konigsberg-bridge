@@ -1,0 +1,173 @@
+.info-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.info-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.info-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.info-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+.info-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.info-section p:last-child {
+  margin-bottom: 0;
+}
+
+.info-section strong {
+  color: var(--accent);
+}
+
+/* Theorem box */
+.info-theorem {
+  background: linear-gradient(135deg, #1a1a2e, #0d1117);
+  border: 2px solid #2d2d5a;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.info-theorem h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--accent);
+  text-align: center;
+}
+
+.theorem-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.theorem-rule {
+  background: #ffffff0a;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.rule-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.rule-closed { background: #1e3a2a; color: #3fb950; }
+.rule-open { background: #1a2a3e; color: #58a6ff; }
+.rule-impossible { background: #3a1520; color: #f85149; }
+
+.theorem-rule p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0;
+}
+
+.theorem-rule strong {
+  color: var(--accent);
+}
+
+/* Königsberg table */
+.konigsberg-table {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.k-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+}
+
+.k-row span {
+  padding: 10px 14px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.k-row:last-child span {
+  border-bottom: none;
+}
+
+.k-header {
+  background: var(--surface2);
+}
+
+.k-header span {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.odd-text { color: #f85149; font-weight: 700; }
+
+/* Info list */
+.info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.info-list li {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.info-list strong {
+  color: var(--accent);
+}
+
+.info-cta {
+  display: flex;
+  justify-content: center;
+}
